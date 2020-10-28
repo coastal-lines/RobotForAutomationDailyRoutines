@@ -19,9 +19,9 @@ namespace OneMoreCSharpFramework.Source.Driver.Waits
 
         public void WaitElement(IWebElement element)
         {
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             wait.Until(
-                driver =>
+                drv =>
                 {
                     try
                     {
@@ -34,6 +34,20 @@ namespace OneMoreCSharpFramework.Source.Driver.Waits
                     }
                     return false;
                 });
+        }
+
+        public void WaitElementEnabled(IWebElement element)
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+
+            try
+            {
+                wait.Until(drv => { return element.Enabled; });
+            }
+            catch (NoSuchElementException er)
+            {
+                Console.WriteLine(er.Message);
+            }
         }
     }
 }
