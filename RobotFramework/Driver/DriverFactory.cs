@@ -8,7 +8,7 @@ namespace RobotFramework.Driver
     {
         public void CreateDriver()
         {
-
+            Console.WriteLine("");
         }
     }
 }
