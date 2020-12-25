@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerRobot", "ServerRobot.csproj", "{3EAA512C-EE2C-41F7-9AF2-4BB8338A84EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotFramework", "..\RobotFramework\RobotFramework.csproj", "{8311701F-E726-4424-94DC-A4990261A48B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotFramework", "..\RobotFramework\RobotFramework.csproj", "{8311701F-E726-4424-94DC-A4990261A48B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotTasks", "..\RobotTasks\RobotTasks.csproj", "{A70259F8-EBCF-48D3-A02D-1480A8F239E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8311701F-E726-4424-94DC-A4990261A48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8311701F-E726-4424-94DC-A4990261A48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8311701F-E726-4424-94DC-A4990261A48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A70259F8-EBCF-48D3-A02D-1480A8F239E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A70259F8-EBCF-48D3-A02D-1480A8F239E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A70259F8-EBCF-48D3-A02D-1480A8F239E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A70259F8-EBCF-48D3-A02D-1480A8F239E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

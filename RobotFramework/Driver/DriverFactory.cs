@@ -1,21 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
+using System.Diagnostics;
 
 namespace RobotFramework.Driver
 {
-    class DriverFactory
+    public class DriverFactory
     {
-        public void CreateDriver(Browser browser)
+        public IWebDriver CreateDriver(Browser browser = Browser.Chrome)
         {
+            IWebDriver driver = null;
+
             switch (browser)
             {
                 case Browser.Chrome:
+                    driver = new ChromeDriver();
                     break;
 
                 case Browser.Firefox:
+                    driver = new FirefoxDriver();
                     break;
             }
+
+            return driver;
         }
     }
 }
