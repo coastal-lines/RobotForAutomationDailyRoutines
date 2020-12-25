@@ -6,9 +6,16 @@ namespace RobotFramework.Driver
 {
     class DriverFactory
     {
-        public void CreateDriver()
+        public void CreateDriver(Browser browser)
         {
-            Console.WriteLine("");
+            switch (browser)
+            {
+                case Browser.Chrome:
+                    break;
+
+                case Browser.Firefox:
+                    break;
+            }
         }
     }
 }
