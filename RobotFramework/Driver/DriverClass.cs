@@ -14,7 +14,7 @@ namespace RobotFramework.Driver
         {
             if (driver == null)
             {
-                CreateDriver();
+                this.driver = CreateDriver(driver);
                 return driver;
             }
             else
@@ -29,11 +29,18 @@ namespace RobotFramework.Driver
             driver.Quit();
             driver.Dispose();
 
+            //TODO
+            //Linux?????
             Process[] chromeDriverProcesses = Process.GetProcessesByName("chromedriver");
             foreach (var chromeDriverProcess in chromeDriverProcesses)
             {
                 chromeDriverProcess.Kill();
             }
+
+            //TODO
+            //Linux?????
+            Process dotnetProcesses = Process.GetProcessesByName("dotnet")[0];
+            dotnetProcesses.Kill();
 
             //TODO
             //add firefox driver

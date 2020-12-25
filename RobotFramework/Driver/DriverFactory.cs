@@ -1,20 +1,17 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
-using System.Diagnostics;
 
 namespace RobotFramework.Driver
 {
     public class DriverFactory
     {
-        public IWebDriver CreateDriver(Browser browser = Browser.Chrome)
+        public IWebDriver CreateDriver(IWebDriver driver, Browser browser = Browser.Chrome)
         {
-            IWebDriver driver = null;
-
             switch (browser)
             {
                 case Browser.Chrome:
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(@"C:\Repos\MyGit\Robot\RobotFramework\bin\Debug\netcoreapp2.1\");
                     break;
 
                 case Browser.Firefox:

@@ -9,7 +9,7 @@ namespace RobotFramework
     {
         public RobotBase()
         {
-            CreateDriver();
+            
         }
     }
 }

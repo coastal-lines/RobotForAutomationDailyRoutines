@@ -3,7 +3,7 @@ using System;
 
 namespace RobotTasks
 {
-    class Program : RobotBase
+    class Program 
     {
         static void Main(string[] args)
         {
@@ -13,11 +13,13 @@ namespace RobotTasks
         }
     }
 
-    class Temp
+    class Temp : RobotBase
     {
         public void Demo()
         {
-
+            GetDriver().Navigate().GoToUrl("https://www.penta-club.ru/forum/");
+            GetDriver().Navigate().GoToUrl("https://metanit.com/sharp/patterns/2.3.php");
+            TeadDownDriver();
         }
     }
 }
