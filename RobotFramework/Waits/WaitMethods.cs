@@ -8,7 +8,7 @@ using System.Text;
 
 namespace RobotFramework.Waits
 {
-    public class WaitMethods : DriverClass
+    public class WaitMethods
     {
         private IWebDriver driver;
         private const int ExplicitWaitingTime = 10;

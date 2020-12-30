@@ -19,3 +19,4 @@ C:\Repos\MyGit\Robot\RobotFramework\obj\Debug\net5.0\RobotFramework.dll
 C:\Repos\MyGit\Robot\RobotFramework\obj\Debug\net5.0\ref\RobotFramework.dll
 C:\Repos\MyGit\Robot\RobotFramework\obj\Debug\net5.0\RobotFramework.pdb
 C:\Repos\MyGit\Robot\RobotFramework\obj\Debug\net5.0\RobotFramework.genruntimeconfig.cache
+C:\Repos\MyGit\Robot\RobotFramework\obj\Debug\net5.0\RobotFramework.csprojAssemblyReference.cache
