@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using RobotFramework.Driver;
-using SeleniumExtras.WaitHelpers;
+using SeleniumExtras.PageObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;

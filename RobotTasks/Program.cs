@@ -15,6 +15,11 @@ namespace RobotTasks
 
     class Temp : RobotBase
     {
+        public void OpenMediaLibrary()
+        {
+
+        }
+
         public void Demo()
         {
             GetDriver().Navigate().GoToUrl("https://www.penta-club.ru/forum/");
