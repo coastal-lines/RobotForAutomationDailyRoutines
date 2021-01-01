@@ -9,20 +9,11 @@ namespace RobotFramework.Driver
 {
     public class DriverClass : DriverFactory
     {
-        private IWebDriver driver;
 
-        public IWebDriver GetDriver()
-        {
-            if (driver == null)
-            {
-                this.driver = CreateDriver(driver);
-                return driver;
-            }
-            else
-            {
-                return driver;
-            }
-        }
+        //TODO
+        //This class probably should be for Driver Parameters and ETC
+
+        private IWebDriver driver;
 
         public void TeadDownDriver()
         {

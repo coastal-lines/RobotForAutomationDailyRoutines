@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using RobotFramework.BasePage;
 using RobotFramework.Driver;
 using SeleniumExtras.PageObjects;
 using System;
