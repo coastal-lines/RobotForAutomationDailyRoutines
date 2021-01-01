@@ -1,24 +1,35 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
 using RobotFramework.BasePage;
-using RobotFramework.Driver;
+using RobotFramework.BasePages;
 using RobotFramework.Waits;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using SeleniumExtras.PageObjects;
 
 namespace RobotTasks.NotForMerge.Pages
 {
     public class LoginPage : PageObject
     {
         [FindsBy(How = How.Id, Using = "UserName")]
-        public IWebElement UserLogin { get; set; }
+        public IWebElement InputLogin { get; set; }
 
-        public LoginPage(IWebDriver driver) : base(driver)
+        [FindsBy(How = How.Id, Using = "Password")]
+        public IWebElement InputPassword { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = "input[value='Login']")]
+        public IWebElement ButtonLogin { get; set; }        
+
+        public LoginPage(IWebDriver driver, WaitMethods Waits) : base(driver, Waits)
         {
             
         }
-
-
+        
+        public void EnterIntoServer()
+        {
+            Waits.WaitElement(InputLogin);
+            InputLogin.SendKeys("superuser");
+            //GetWaitMethods().WaitElement(InputPassword);
+            InputPassword.SendKeys("456789");
+            //GetWaitMethods().WaitElement(ButtonLogin);
+            ButtonLogin.Click();
+        }
     }
 }
