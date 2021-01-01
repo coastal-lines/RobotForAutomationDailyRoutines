@@ -8,17 +8,17 @@ namespace RobotFramework.BasePage
     public class MainClass : DriverClass
     {
         private IWebDriver driver;
-        private WaitMethods waitMethods;
+        private WaitMethods WaitMethods;
 
         public void StartDriverWorkflow()
         {
             driver = GetDriver();
-            waitMethods = new WaitMethods(driver);
+            WaitMethods = new WaitMethods(driver);
         }
 
         public WaitMethods GetWaitMethods()
         {
-            return this.waitMethods;
+            return this.WaitMethods;
         }
     }
 }
