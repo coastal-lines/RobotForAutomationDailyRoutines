@@ -26,9 +26,9 @@ namespace RobotTasks.NotForMerge.Pages
         {
             Waits.WaitElement(InputLogin);
             InputLogin.SendKeys("superuser");
-            //GetWaitMethods().WaitElement(InputPassword);
+            Waits.WaitElement(InputPassword);
             InputPassword.SendKeys("456789");
-            //GetWaitMethods().WaitElement(ButtonLogin);
+            Waits.WaitElement(ButtonLogin);
             ButtonLogin.Click();
         }
     }
