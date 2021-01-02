@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RobotFramework.Driver;
+using System;
 
 namespace RobotFramework
 {

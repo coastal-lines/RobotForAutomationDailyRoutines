@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using System.Configuration;
 
 namespace RobotFramework.Driver
 {
@@ -11,7 +12,7 @@ namespace RobotFramework.Driver
             switch (browser)
             {
                 case Browser.Chrome:
-                    driver = new ChromeDriver(@"C:\Repos\MyGit\Robot\RobotFramework\bin\Debug\netcoreapp2.1\");
+                    driver = new ChromeDriver(ConfigurationManager.AppSettings["PathDriver"]);
                     break;
 
                 case Browser.Firefox:

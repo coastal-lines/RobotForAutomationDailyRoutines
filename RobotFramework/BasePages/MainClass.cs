@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using RobotFramework.Driver;
 using RobotFramework.Waits;
-using SeleniumExtras.PageObjects;
 
 namespace RobotFramework.BasePage
 {
@@ -15,7 +14,6 @@ namespace RobotFramework.BasePage
         {
             driverClass = new DriverClass();
             driver = driverClass.CreateDriver(this.driver);
-            //WaitMethods = new WaitMethods();
         }
         
         public WaitMethods GetWaitMethods()
