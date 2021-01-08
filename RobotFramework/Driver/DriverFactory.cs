@@ -7,12 +7,14 @@ namespace RobotFramework.Driver
 {
     public class DriverFactory
     {
-        public IWebDriver CreateDriver(IWebDriver driver, Browser browser = Browser.Chrome)
+        private IWebDriver driver;
+
+        public IWebDriver CreateDriver(Browser browser = Browser.Chrome)
         {
             switch (browser)
             {
                 case Browser.Chrome:
-                    driver = new ChromeDriver(ConfigurationManager.AppSettings["PathDriver"]);
+                    driver = new ChromeDriver(@"C:\Repos\MyGit\Robot\RobotFramework\bin\Debug\netcoreapp2.1");
                     //driver = new ChromeDriver("/home/user/Desktop/Project/Driver/");
                     break;
 
