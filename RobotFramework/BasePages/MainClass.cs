@@ -3,6 +3,7 @@ using OpenQA.Selenium.Chrome;
 using RobotFramework.Driver;
 using RobotFramework.Utils;
 using RobotFramework.Waits;
+using System.Diagnostics;
 
 namespace RobotFramework.BasePage
 {
@@ -43,6 +44,29 @@ namespace RobotFramework.BasePage
             {
                 return driver;
             }
+        }
+
+        public void TeadDownDriver()
+        {
+            driver.Close();
+            driver.Quit();
+            driver.Dispose();
+
+            //TODO
+            //Linux?????
+            Process[] chromeDriverProcesses = Process.GetProcessesByName("chromedriver");
+            foreach (var chromeDriverProcess in chromeDriverProcesses)
+            {
+                chromeDriverProcess.Kill();
+            }
+
+            //TODO
+            //Linux?????
+            //Process dotnetProcesses = Process.GetProcessesByName("dotnet")[0];
+            //dotnetProcesses.Kill();
+
+            //TODO
+            //add firefox driver
         }
     }
 }

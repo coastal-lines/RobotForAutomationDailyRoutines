@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RobotFramework.Utils
 {
-    public static class RegExp
+    public static class RegexpHelper
     {
         public static string Matching(string what, string where, int group)
         {
